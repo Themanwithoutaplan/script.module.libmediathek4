@@ -15,10 +15,10 @@ import time
 import libmediathek3utils
 
 def dialogDate():
-	dialog = xbmcgui.Dialog()
-	return dialog.numeric(1, libmediathek3utils.getTranslation(31030)).replace('/','').replace(' ','0')
-	
+    dialog = xbmcgui.Dialog()
+    return dialog.numeric(1, libmediathek3utils.getTranslation(31030)).replace('/','').replace(' ','0')
+
 def getSearchString():
-	dialog = xbmcgui.Dialog()
-	d = dialog.input(libmediathek3utils.getTranslation(31039),type=xbmcgui.INPUT_ALPHANUM)
-	return urllib.quote_plus(d)
+    dialog = xbmcgui.Dialog()
+    d = dialog.input(libmediathek3utils.getTranslation(31039),type=xbmcgui.INPUT_ALPHANUM)
+    return urllib.quote_plus(d)
